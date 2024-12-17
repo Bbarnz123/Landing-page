@@ -1,16 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
     height: 100vh;
     margin: 0;
     background-color: #1F2937;
-}
-
-.content {
-   margin: 0 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -18,8 +17,8 @@ body {
     justify-content: space-between;
     background-color: #1F2937;
     color: white;
-    padding: 10px 0;
     font-family: sans-serif;
+    padding: 15px 100px;
 }
 
 ul {
@@ -46,7 +45,9 @@ li {
     padding: 50px 0;
     font-family: sans-serif;
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    padding: 100px 100px;
+    
 }
 
 .herotext {
@@ -87,4 +88,126 @@ button {
 
 .herotext, .placeholder {
     flex: 1;
+}
+
+.container2 {
+    background-color: white;
+    font-family: sans-serif;
+    padding: 0 100px 100px;
+}
+
+.infoheader {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container2 .cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 130px;
+    height: 130px;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box {
+    max-width: 130px;
+    text-align: center;
+}
+
+.container3 {
+    background-color: #E5E7EB;
+    padding: 120px 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 10px;
+}
+
+.creator {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.statement {
+    max-width: 600px;
+}
+
+.container4 {
+    background-color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    display: flex;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-family: sans-serif;
+}
+
+.signup {
+    display: flex;
+    background-color: #3882F6;
+    padding: 40px 60px;
+    border-radius: 10px;
+    color: white;
+    gap: 30px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    border: 2px solid white;
+    padding: 15px 35px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    max-height: 20px;
+    align-items: center;
+}
+
+#largertext {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#smallertext {
+    color: #E5E7EB;
+}
+
+.signupinfo {
+    display: flex;
+    gap: 15px;
+    max-width: 1000px;
+    flex-grow: 1;
+    justify-content: space-between;
 }
